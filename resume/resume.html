@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>Resume</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div className="flex flex-col md:flex-row">
+                    <div className="w-full md:w-1/3 bg-gray-800 text-white p-8">
+                        <div className="flex flex-col items-center">
+                            <img src="https://placehold.co/100x100" alt="Profile picture of Chandler Bing" className="rounded-full mb-4"/>
+                            <h2 className="text-xl font-bold">CHANDLER BING</h2>
+                            <p className="text-sm">Job Title</p>
+                        </div>
+                        <div className="mt-8">
+                            <h3 className="text-lg font-bold">ABOUT ME</h3>
+                            <p className="text-sm mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div className="mt-8">
+                            <h3 className="text-lg font-bold">CONTACT</h3>
+                            <p className="text-sm mt-2">Email: chandler.bing@example.com</p>
+                            <p className="text-sm">Phone: (123) 456-7890</p>
+                        </div>
+                        <div className="mt-8">
+                            <h3 className="text-lg font-bold">SOCIAL</h3>
+                            <p className="text-sm mt-2"><i className="fab fa-linkedin"></i> linkedin.com/in/chandlerbing</p>
+                            <p className="text-sm"><i className="fab fa-github"></i> github.com/chandlerbing</p>
+                        </div>
+                        <div className="mt-8">
+                            <h3 className="text-lg font-bold">EDUCATION</h3>
+                            <p className="text-sm mt-2">B.S. in Computer Science</p>
+                            <p className="text-sm">University of Somewhere</p>
+                        </div>
+                        <div className="mt-8">
+                            <h3 className="text-lg font-bold">LANGUAGES</h3>
+                            <p className="text-sm mt-2">English, Spanish</p>
+                        </div>
+                    </div>
+                    <div className="w-full md:w-2/3 bg-white p-8">
+                        <div className="flex flex-col md:flex-row justify-between items-center">
+                            <h1 className="text-3xl font-bold">CHANDLER BING</h1>
+                            <div className="text-right mt-4 md:mt-0">
+                                <p className="text-sm"><i className="fas fa-envelope"></i> chandler.bing@example.com</p>
+                                <p className="text-sm"><i className="fas fa-phone"></i> (123) 456-7890</p>
+                                <p className="text-sm"><i className="fab fa-linkedin"></i> linkedin.com/in/chandlerbing</p>
+                                <p className="text-sm"><i className="fab fa-github"></i> github.com/chandlerbing</p>
+                            </div>
+                        </div>
+                        <div className="mt-8">
+                            <h2 className="text-xl font-bold">WORK EXPERIENCE</h2>
+                            <div className="mt-4">
+                                <h3 className="text-lg font-bold">Job Title 1</h3>
+                                <p className="text-sm">Company Name | Jan 2020 - Present</p>
+                                <ul className="list-disc list-inside text-sm mt-2">
+                                    <li>Responsibility 1</li>
+                                    <li>Responsibility 2</li>
+                                    <li>Responsibility 3</li>
+                                </ul>
+                            </div>
+                            <div className="mt-4">
+                                <h3 className="text-lg font-bold">Job Title 2</h3>
+                                <p className="text-sm">Company Name | Jan 2018 - Dec 2019</p>
+                                <ul className="list-disc list-inside text-sm mt-2">
+                                    <li>Responsibility 1</li>
+                                    <li>Responsibility 2</li>
+                                    <li>Responsibility 3</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="mt-8">
+                            <h2 className="text-xl font-bold">PROJECTS</h2>
+                            <div className="mt-4">
+                                <h3 className="text-lg font-bold">Project 1</h3>
+                                <p className="text-sm">Description of project 1.</p>
+                            </div>
+                            <div className="mt-4">
+                                <h3 className="text-lg font-bold">Project 2</h3>
+                                <p className="text-sm">Description of project 2.</p>
+                            </div>
+                        </div>
+                        <div className="mt-8">
+                            <h2 className="text-xl font-bold">SKILLS</h2>
+                            <div className="mt-4">
+                                <p className="text-sm">Skill 1</p>
+                                <p className="text-sm">Skill 2</p>
+                                <p className="text-sm">Skill 3</p>
+                            </div>
+                        </div>
+                        <div className="mt-8">
+                            <h2 className="text-xl font-bold">CERTIFICATIONS</h2>
+                            <div className="mt-4">
+                                <p className="text-sm">Certification 1</p>
+                                <p className="text-sm">Certification 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
