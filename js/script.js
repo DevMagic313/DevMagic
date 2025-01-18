@@ -50,7 +50,7 @@ ScrollReveal().reveal(".home-contant h1 , .about-img", { origin: "left" });
 //  ScrollReveal().reveal('.home-contant p , .about-content', { origin: 'right' });
 //  typed js
 var typed = new Typed(".multiple-text", {
-  strings: ["Student", "Frontend Developer","Web Developer","and I know", "HTML5", "CSS3", "JavaScript", "Bootstrap", "Tailwind", "React JS"],
+  strings: ["Student", "Frontend Developer","Web Developer"],
   typeSpeed: 100,
   backSpeed: 100,
   backDelay: 1000,
